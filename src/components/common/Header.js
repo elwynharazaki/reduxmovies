@@ -1,5 +1,5 @@
-import { Text, View } from 'react-native';
 import React from 'react';
+import { Text, View } from 'react-native';
 
 const Header = (props) => {
 	const { headerStyle, textStyle } = styles;
@@ -12,15 +12,15 @@ const Header = (props) => {
 };
 
 const styles = {
+   headerStyle: {
+      alignItems: 'center',
+      backgroundColor: 'transparent'
+   },
+
    textStyle: {
       color: '#85A4AF',
       fontSize: 25,
-      padding: 5
-   },
-
-   headerStyle: {
-      alignItems: 'center',
-      backgroundColor: '#010709'
+      padding: 8
    }
 };
 
